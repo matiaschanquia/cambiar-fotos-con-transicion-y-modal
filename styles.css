@@ -23,6 +23,14 @@ body {
 
 .container-header > h1 {
     font-size: 22px;
+    font-weight: 900;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #8C61D5, #19A8C8);
+    background-image: -moz-linear-gradient(left, #8C61D5, #19A8C8);
+    background-image: -o-linear-gradient(left, #8C61D5, #19A8C8);
+    background-image: linear-gradient(to right, #8C61D5, #19A8C8);
 }
 
 .section-imgs {
