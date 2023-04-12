@@ -45,8 +45,13 @@ const imgModal = document.querySelector(".content-modal > img")
 
 const cambiarSizeContent = () => {
     if(window.innerHeight < 630) {
-        contentModal.style.width = "auto";
-        contentModal.style.height = "90%";
+        if(window.innerHeight > window.innerWidth) {
+            contentModal.style.height = "auto";
+            contentModal.style.width = "90%";
+        } else {
+            contentModal.style.width = "auto";
+            contentModal.style.height = "90%";
+        }
     } else {
         contentModal.style.height = "auto";
         contentModal.style.width = "90%";
@@ -55,9 +60,7 @@ const cambiarSizeContent = () => {
 
 cambiarSizeContent();
 
-window.addEventListener("resize", () => {
-    cambiarSizeContent();
-});
+window.addEventListener("resize", cambiarSizeContent);
 
 const cerrarModal = () => {
     modal.style.display = "none";

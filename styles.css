@@ -29,12 +29,20 @@ body {
     min-height: calc(100vh - 129px);
     display: flex;
     padding: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-imgs > h2 {
+    color: #fff;
+    text-align: center;
 }
 
 .container-imgs {
     width: 90%;
     max-width: 400px;
-    margin: auto;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
